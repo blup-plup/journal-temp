@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color:black;
+}
+
+.split {
+  height: 100%;
+  width: 71%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color:black;
+}
+
+.right {
+  right: 0;
+  background-color: #fcfcfc;
+}
+
+
+.centered img {
+  width: 418px;
+  height: 744px;
+  border-radius: -1%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <img src="new.jpeg" alt="Other">
+    </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <form style="margin-left: 275px; margin-right:325px";>
+    <center><h1>Login</h1></center>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>Do not have an account?<a href="#" style="color:dodgerblue">Register</a></p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Login</button>
+    </div>
+
+  </div>
+</form>
+
+  </div>
+</div>
+     
+</body>
+</html> 
+   
+   
+   <!-- <!DOCTYPE html> 
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+    </head>
+    
+    <body>
+        <div align="center">
+        <h2>LOGIN</h2>
+        <form name="loginform" action="Profile.html" method="GET">
+            
+            <label for ="email">Email</label>
+            <input type="text" name = "email" placeholder="Enter your email"></input><br><br>
+            <label for="password">Password</label>
+            
+            <input type="password" name = "pwd" placeholder="Enter your password"></input><br><br><br>
+            <input type="submit" value="Login"></input>
+       
+        </form>
+    </div>
+        
+    </body>
+    </html> -->
